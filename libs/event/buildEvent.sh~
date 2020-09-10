@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd $(pwd)/libevent-2.0.22-stable/ 
+./configure --prefix=$(pwd)/../output --enable-share=no --enable-static=yes
+make && make install
+cd -
+
+

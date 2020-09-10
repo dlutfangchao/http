@@ -1,5 +1,5 @@
-CROSS_COMPILER=
-
+#CROSS_COMPILER=
+CROSS_COMPILER=arm-unknown-linux-gnueabi-
 TARGET=httpClient
 
 CC=$(CROSS_COMPILER)gcc

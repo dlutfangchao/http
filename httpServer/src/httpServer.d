@@ -1,0 +1,22 @@
+/home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/src/httpServer.o: \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/src/httpServer.c \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/libs/event/include/event.h \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/libs/event/include/event2/event-config.h \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/libs/event/include/evutil.h \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/libs/event/include/event2/util.h \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/libs/event/include/event2/event_struct.h \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/libs/event/include/event2/keyvalq_struct.h \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/libs/event/include/event2/event.h \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/libs/event/include/event2/event_compat.h \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/libs/event/include/event2/buffer.h \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/libs/event/include/event2/buffer_compat.h \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/libs/event/include/event2/bufferevent.h \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/libs/event/include/event2/bufferevent_struct.h \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/libs/event/include/event2/bufferevent_compat.h \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/libs/event/include/event2/tag.h \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/libs/event/include/event2/tag_compat.h \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/libs/event/include/event2/http.h \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/libs/event/include/event2/http_struct.h \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/libs/event/include/event2/http_compat.h \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/inc/cJSON.h \
+ /home/fc/work/test/http_client/httpServer-and-httpClient/httpServer/inc/httpServer.h

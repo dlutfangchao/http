@@ -7,7 +7,7 @@
 
 #define HTTP_RESPOND_ERROR			"Error"
 #define HTTP_RESPOND_OK				"OK"
-#define HTTP_LISTEN_IP				"127.0.0.1"
+#define HTTP_LISTEN_IP				"172.31.4.20"
 #define HTTP_LISTEN_PORT			6666
 #define HTTP_CONNECT_TIMEOUT			20
 #define HTTP_CURL_FACEDEL_PATH			"face"
@@ -63,7 +63,7 @@ int http_RespondCodeCreate(void *pst,void *pArg0,void *pArg1)
 	return 0;
 }
 
-int main()
+int main(int argc, char **argv)
 {
 
 	stHttpServer stHttpServerInfo;
@@ -71,6 +71,7 @@ int main()
 	stHttpServerInfo.httpd_ListenPort	= 6666;
 	stHttpServerInfo.httpd_timeout		= 20;
 	memcpy(stHttpServerInfo.httpd_ListenIP,HTTP_LISTEN_IP,strlen(HTTP_LISTEN_IP));
+	//memcpy(stHttpServerInfo.httpd_ListenIP,argv[1],strlen(argv[1]));
 	stHttpServerInfo.defaultDelFunc		= http_CommonCallfunc;
 	stHttpServerInfo.faceInfoDelFuc		= http_FaceCallfunc;	
 	stHttpServerInfo.keepAliveDelFunc	= http_KeepAliveCallfunc;	

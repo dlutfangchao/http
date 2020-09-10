@@ -22,6 +22,7 @@
 ******************************************************************/
 #include <string.h>
 #include "curl.h"
+//#include <curl/curl.h>
 #include "httpClient.h"
 
 /*****************************************************************
@@ -118,13 +119,14 @@ size_t httpClient_writeBack(void *ptr, size_t size, size_t nmemb, void *stream)
 ** Date：
 ** Description：
 *************************************************/
-int httpClient_httpPost(stHttpClientInfo *pstUserArg,long *pRespCode)
+int httpClient_httpPost(stHttpClientInfo *pstUserArg,long *pRespCode, char *eth)
 {
 	int nRet = 0;
 	CURL *curl = NULL;
 	CURLcode code = 0;
 	long response_code = -1;
 	struct curl_slist *chunk = NULL;
+	struct curl_slist *connect_to = NULL;
 
 	*pRespCode = 0;
 
@@ -133,10 +135,13 @@ int httpClient_httpPost(stHttpClientInfo *pstUserArg,long *pRespCode)
 		return -1;
 	}
 
+	curl_global_init(CURL_GLOBAL_DEFAULT);
 	curl = curl_easy_init();
 	if(curl)
-	{
+	{	
+	
 		curl_easy_setopt(curl, CURLOPT_URL, pstUserArg->chUrl);
+		curl_easy_setopt(curl, CURLOPT_INTERFACE, eth);
 		switch(pstUserArg->stHttpUserHead.nOperation)
 		{
 			case HTTP_POST_ONE_SHOT_PIC_MEM:
@@ -171,6 +176,7 @@ int httpClient_httpPost(stHttpClientInfo *pstUserArg,long *pRespCode)
 		code = curl_easy_perform(curl);
 		if(code != CURLE_OK)
 		{
+			printf("error code is %d", code);
 			nRet = -1;
 			printf("%s func curl_easy_perform failed:%s at (%d) line\n",__FUNCTION__,curl_easy_strerror(code),__LINE__);
 		} 

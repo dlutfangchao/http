@@ -6,7 +6,7 @@
 
 #define HTTP_RCVBUF_SIZE_MAX			(3*1024*1024)
 
-#define HTTP_SERVER_IP					"127.0.0.1"
+#define HTTP_SERVER_IP					"172.31.4.20"
 #define HTTP_SERVER_PORT				6666
 #define HTTP_SERVER_PATH				"/"
 
@@ -20,14 +20,15 @@ char gHttpSendBuffer[HTTP_RCVBUF_SIZE_MAX]={0};
 
 
 
-int main()
+int main(int argc, char **argv)
 {
 	int nRet = -1;
 	long lTmp = -1;
 	stHttpClientInfo stHttpClient;
 
-	memcpy(stHttpClient.chClientIP,HTTP_SERVER_IP,strlen(HTTP_SERVER_IP));	
-	memcpy(stHttpClient.chClientPath,HTTP_SERVER_PATH,strlen(HTTP_SERVER_PATH));
+	//memcpy(stHttpClient.chClientIP,HTTP_SERVER_IP,strlen(HTTP_SERVER_IP));
+        memcpy(stHttpClient.chClientIP,argv[1],strlen(argv[1]));	
+	//memcpy(stHttpClient.chClientPath,HTTP_SERVER_PATH,strlen(HTTP_SERVER_PATH));
 	stHttpClient.nClientPort = HTTP_SERVER_PORT;
 	stHttpClient.stHttpUserHead.nOperation 	= HTTP_POST_ONE_SHOT_PIC_MEM;	
 	stHttpClient.stHttpUserHead.ucFlag 		= HTTP_HEAD;
@@ -44,12 +45,12 @@ int main()
 	stHttpClient.stHttpUserBody.nRcvSize	= 0;
 	stHttpClient.stHttpUserBody.nSedSize	= strlen(POSTDATA);
 	memcpy(stHttpClient.stHttpUserBody.pSendBuffer,POSTDATA,strlen(POSTDATA));
-	sprintf(stHttpClient.chUrl,"%s:%d/%s",stHttpClient.chClientIP,stHttpClient.nClientPort,stHttpClient.chClientPath);
-
+	//sprintf(stHttpClient.chUrl,"%s:%d/%s",stHttpClient.chClientIP,stHttpClient.nClientPort,stHttpClient.chClientPath);
+	sprintf(stHttpClient.chUrl,"%s:%d/",stHttpClient.chClientIP,stHttpClient.nClientPort);
 	printf("->%s\n",stHttpClient.chUrl);
 	
 	/*ÉÏ´«Í¼Æ¬*/
-	nRet = httpClient_httpPost(&stHttpClient,&lTmp);
+	nRet = httpClient_httpPost(&stHttpClient,&lTmp,argv[2]);
 	if(nRet < 0)
 	{
 		printf("[picUpload] ====> %s func http_Post failed,at (%d) lines\n",__FUNCTION__,__LINE__);

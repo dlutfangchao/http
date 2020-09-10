@@ -1,10 +1,15 @@
-COMPILE_COMPILER=
+CROSS_COMPILER=arm-unknown-linux-gnueabi-
 
 TARGET=httpserver
 
 CC=$(CROSS_COMPILER)gcc
 LD=$(CROSS_COMPILER)g++ 
 CPP=$(CROSS_COMPILER)g++
+
+#CC=gcc
+#LD=g++
+#CPP=g++
+
 
 # 配置目录
 DIR_PRJ:=$(shell pwd)

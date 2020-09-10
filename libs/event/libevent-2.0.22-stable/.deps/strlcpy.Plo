@@ -1,0 +1,84 @@
+strlcpy.lo: strlcpy.c \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/stdc-predef.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/sys/types.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/features.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/sys/cdefs.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/wordsize.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/gnu/stubs.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/gnu/stubs-soft.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/types.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/typesizes.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/time.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/lib/gcc/arm-unknown-linux-gnueabi/4.8.2/include/stddef.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/endian.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/endian.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/byteswap.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/byteswap-16.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/sys/select.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/select.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/sigset.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/time.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/sys/sysmacros.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/pthreadtypes.h \
+ include/event2/event-config.h strlcpy-internal.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/string.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/xlocale.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/string.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/string2.h \
+ /home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/stdlib.h
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/stdc-predef.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/sys/types.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/features.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/sys/cdefs.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/wordsize.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/gnu/stubs.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/gnu/stubs-soft.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/types.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/typesizes.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/time.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/lib/gcc/arm-unknown-linux-gnueabi/4.8.2/include/stddef.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/endian.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/endian.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/byteswap.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/byteswap-16.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/sys/select.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/select.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/sigset.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/time.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/sys/sysmacros.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/pthreadtypes.h:
+
+include/event2/event-config.h:
+
+strlcpy-internal.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/string.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/xlocale.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/string.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/bits/string2.h:
+
+/home/fc/saic/ZTE_uboot/arm_eabi_gcc4.8.2_glibc2.18.0/arm-unknown-linux-gnueabi/include/stdlib.h:

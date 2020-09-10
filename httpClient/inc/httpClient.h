@@ -73,7 +73,7 @@ typedef struct _stHttpClientInfo
 /*****************************************************************
 * 函数原型声明
 ******************************************************************/
-int httpClient_httpPost(stHttpClientInfo *pstUserArg,long *pRespCode);
+int httpClient_httpPost(stHttpClientInfo *pstUserArg,long *pRespCode, char *eth);
 int httpClient_httpGet(stHttpClientInfo *pstUserArg,long *pRespCode);
 
 
